@@ -1,3 +1,15 @@
+@font-face{
+  font-family: "Quicksand";
+  src:local("Quicksand"),
+  url('./assets/fonts/Quicksand/Quicksand.ttf') 
+}
+
+@font-face{
+  font-family: "Nunito";
+  src:local("Nunito"),
+  url('./assets/fonts/Nunito/Nunito.ttf') 
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #EAEAEA;
@@ -11,7 +23,9 @@
   --yellow:#F7C02A;
 }
 
+
+
 body {
   margin: 0;
-  width: 100vw;
+  /* width: 100vw; */
 }

@@ -3,7 +3,9 @@
   --skyblue: #00B1FF;
   --darkblue: #16325B;
   --yellow: #F7C02A;
+  --gray: #7087B4;
 }
+
 
 #root {
   margin: 0px;
@@ -21,6 +23,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
+  background-color: #EAEAEA;
   /* border: solid black; */
 }
 
@@ -46,7 +49,6 @@
 }
 
 .navbar-items>a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: #7e7e7e;
@@ -57,7 +59,6 @@
 }
 
 .navbar-items>button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.3rem;
   font-weight: normal;
   color: var(--blue);
@@ -93,29 +94,233 @@
 
 .main {
   width: 100vw;
+  /* height: 10vh; */
   /* border: solid black; */
   box-sizing: border-box;
   margin-top: 100px;
   height: calc(100vh - 100px);
   background: #EAEAEA;
   justify-content: center;
+  padding: 40px 0;
+}
+
+.main>div {
+  height: 100%;
 }
 
 .main-left-section {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  justify-content: start;
   text-align: start;
 }
 
-.main-left-section>h1{
+.main-left-section>h1 {
   color: var(--blue);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3rem;
-  font-weight: 100;
+  font-weight: 700;
 }
 
-.main-left-section>h2{
+.main-left-section>h2 {
   color: gray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.main-section-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.main-right-section {
+  /* justify-content: end; */
+  align-items: center;
+  text-align: start;
+  width: 50%;
+  /* height: 60%; */
+  background-color: #16325B;
+  border-radius: 20px;
+}
+
+.main-right-section>h1 {
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  width: 80%;
+  margin:-30px 0 30px 0;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.form-inputs>input {
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 50px;
+  background-color: transparent;
+  border: white solid;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+input::checkmark {
+  background-color: transparent;
+  width: 50px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 100%);
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: white solid 1.5px;
+  box-sizing: border-box;
+
+}
+
+/* When the checkbox is checked, add a blue background */
+#checkbox:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-button {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  border: solid white;
+  color: var(--blue);
+  padding: 10px;
+  margin: -40px auto ;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-button:hover{
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.card-section{
+  background-color: #F3F3F3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding: 30px;
+}
+
+.card-section>div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.card{
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: inherit;
+  padding: 10px 20px;
+  box-shadow: #535353;
+
+}
+
+.card>h3{
+  color: #023CA6;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.card>p{
+  color: #7e7d7d;
+  font-weight: 500;
+  font-size: 1.3rem;
 }

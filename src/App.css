@@ -93,14 +93,12 @@
 }
 
 .main {
-  width: 100vw;
-  /* height: 10vh; */
-  /* border: solid black; */
+  min-height: 80vh;
   box-sizing: border-box;
   margin-top: 100px;
-  height: calc(100vh - 100px);
   background: #EAEAEA;
   justify-content: center;
+  align-items: center;
   padding: 40px 0;
 }
 
@@ -130,32 +128,28 @@
 .main-section-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: var(--gray);
   font-weight: 500;
 }
 
 .main-right-section {
-  /* justify-content: end; */
   align-items: center;
   text-align: start;
   width: 50%;
-  /* height: 60%; */
   background-color: #16325B;
   border-radius: 20px;
 }
 
 .main-right-section>h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 100%;
   width: 80%;
-  margin:-30px 0 30px 0;
 }
 
 .form-inputs {
@@ -169,8 +163,6 @@
   font-size: 1.4rem;
   padding: 10px 20px;
   border-radius: 20px;
-  width: 90%;
-  height: 50px;
   background-color: transparent;
   border: white solid;
   color: white;
@@ -179,11 +171,6 @@
 input::placeholder {
   color: white;
   opacity: 0.8;
-}
-
-input::checkmark {
-  background-color: transparent;
-  width: 50px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -214,55 +201,51 @@ input[type=number] {
 /* Hide the browser's default checkbox */
 .checkbox input {
   position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, 85%);
+
   opacity: 0;
+  /* background-color: transparent; */
   cursor: pointer;
-  height: 0;
-  width: 0;
+  height: 25px;
+  width: 25px;
 }
 
-/* Create a custom checkbox */
+/* custom checkbox */
 .checkmark {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0%, 100%);
+  transform: translate(0%, 85%);
   height: 25px;
   width: 25px;
+  z-index: 2;
   background-color: transparent;
+  pointer-events: none;
   border-radius: 5px;
   border: white solid 1.5px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
 }
 
-/* When the checkbox is checked, add a blue background */
-#checkbox:checked~.checkmark {
+input[checkbox]:checked~.checkmark {
   background-color: #2196F3;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/*  checkmark hidden when not checked */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
+/* checkmark when checked */
 .checkbox input:checked~.checkmark:after {
+  content: "✔";
   display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkbox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: translate(10%, -10%);
+  padding: 1px;
 }
 
 .form-button {
@@ -270,57 +253,74 @@ input[type=number] {
   font-size: 2rem;
   font-weight: 600;
   border-radius: 50px;
-  height: 100%;
   width: 50%;
   background-color: white;
   border: solid white;
   color: var(--blue);
-  padding: 10px;
-  margin: -40px auto ;
+  padding: 10px 0;
+  margin: auto;
   transition: all 0.2s ease-in-out;
 }
 
-.form-button:hover{
+.form-button:hover {
   background-color: transparent;
   color: white;
   cursor: pointer;
 }
 
-.card-section{
+.sections {
   background-color: #F3F3F3;
-  width: 100%;
-  display: flex;
   justify-content: center;
-  height: 400px;
-  padding: 30px;
+  align-items: center;
+  padding: 40px;
+  gap: 60px;
 }
 
-.card-section>div{
+.sections>section {
+  width: 70%;
+  justify-content: center;
+  padding: 40px;
+
+}
+
+.card-section {
+  background-color: #F3F3F3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
   justify-content: center;
-
+  gap: 30px;
 }
 
-.card{
+.card {
   justify-content: center;
   align-items: center;
   background-color: white;
   font-family: inherit;
   padding: 10px 20px;
-  box-shadow: #535353;
-
+  box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
 }
 
-.card>h3{
+.card>h3 {
   color: #023CA6;
   font-weight: 600;
   font-size: 2rem;
 }
 
-.card>p{
+.card>p {
   color: #7e7d7d;
   font-weight: 500;
   font-size: 1.3rem;
+}
+
+.why-section {
+  background-color: white;
+}
+
+.benifits-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+
 }

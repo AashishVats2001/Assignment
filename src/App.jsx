@@ -97,16 +97,17 @@ function App() {
               </div>
 
               <button type="submit" className="form-button">
-                Schedule Demo <span style={{ color: "#F7C02A" }}>--</span>
+                Schedule Demo <span style={{ color: "#F7C02A" }}>➡</span>
               </button>
             </form>
           </div>
         </div>
       </section>
 
-      {/* Cards */}
-      <section className="card-section">
-        <div style={{ width: "80%" }} className="">
+      {/* Sections */}
+      <div className="flex-col sections">
+        {/* Cards Section*/}
+        <section className="card-section">
           <div className="card flex-col">
             <h3>Data Protection</h3>
             <p>Protect Data Leakage With Strict Data Protection</p>
@@ -136,8 +137,106 @@ function App() {
             <h3>AI Integration</h3>
             <p>TTS and AI Integrated to Reduce Human Error</p>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="why-section flex-col">
+          <h1>Why Choose Us</h1>
+          <div className="card flex-col">
+            <h3>1. Seamless Patient Management</h3>
+            <p>
+              Efforlesssly manage Patient records, appointments, commincations
+              and history in a centralized, secure platform tailored for IVF
+              enhancing efficiency{" "}
+              <span style={{ color: "#00B1FF", cursor: "pointer" }}>
+                Read More
+              </span>
+            </p>
+          </div>
+
+          <div className="card flex-col">
+            <h3>2. Detailed IVF Cycle Tracking</h3>
+            <p>
+              Track each stage of IVF cycle, from eff retrieval to embryo
+              rtansfer, with real-time updates and data-driven insights for
+              better outcomes. imroving decision{" "}
+              <span style={{ color: "#00B1FF", cursor: "pointer" }}>
+                Read More
+              </span>
+            </p>
+          </div>
+
+          <div className="card flex-col">
+            <h3>3. Automated Billing & Finance Integration</h3>
+            <p>
+              Streamline complex IVF billing processes with automated
+              milestone-based, package billing and insurance management in one
+              easy-to-use system, reducing{" "}
+              <span style={{ color: "#00B1FF", cursor: "pointer" }}>
+                Read More
+              </span>
+            </p>
+          </div>
+
+          <div className="card flex-col">
+            <h3>4. Lab Management</h3>
+            <p>
+              Optimize lab operations by tracking embryo development, managing
+              cryostorage and maintaining compliance with laboratory standards
+              all while ensuring{" "}
+              <span style={{ color: "#00B1FF", cursor: "pointer" }}>
+                Read More
+              </span>
+            </p>
+          </div>
+
+          <div className="card flex-col">
+            <h3>5. Reposting & Compliance</h3>
+            <p>
+              Generate accurate, automated reports and ensure your clinic meets
+              regulatory standards while tracking performance metrics and
+              patient outcomes{" "}
+              <span style={{ color: "#00B1FF", cursor: "pointer" }}>
+                Read More
+              </span>
+            </p>
+          </div>
+        </section>
+
+        {/* Benifits */}
+        <section className="benifits-section">
+          <div className="flex-col benifit">
+            <h3>
+              Optimize <span style={{ color: "#023CA6" }}>Operations</span>
+            </h3>
+          </div>
+          <div className="flex-col benifit">
+            <h3>
+              Leverage CRM for <span style={{ color: "#023CA6" }}>Patient Growth</span>
+            </h3>
+          </div>
+          <div className="flex-col benifit">
+            <h3>
+              Simplify <span style={{ color: "#023CA6" }}>Financial Processes</span>
+            </h3>
+          </div>
+          <div className="flex-col benifit">
+            <h3>
+              Enhanced<span style={{ color: "#023CA6" }}>Data Security</span>
+            </h3>
+          </div>
+          <div className="flex-col benifit">
+            <h3>
+              Simplify <span style={{ color: "#023CA6" }}>Financial Processes</span>
+            </h3>
+          </div>
+          <div className="flex-col benifit">
+            <h3>
+              Forever <span style={{ color: "#023CA6" }}>Medical Records</span>
+            </h3>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

@@ -314,13 +314,14 @@ input[checkbox]:checked~.checkmark {
   font-size: 1.3rem;
 }
 
-.why-section {
+.why-section,.benifits-section,.faq-section,.form-section,.hassle-section,.focused-section {
   background-color: white;
 }
 
 .benifits-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
-
 }
+
+
+

@@ -212,12 +212,14 @@ function App() {
           </div>
           <div className="flex-col benifit">
             <h3>
-              Leverage CRM for <span style={{ color: "#023CA6" }}>Patient Growth</span>
+              Leverage CRM for{" "}
+              <span style={{ color: "#023CA6" }}>Patient Growth</span>
             </h3>
           </div>
           <div className="flex-col benifit">
             <h3>
-              Simplify <span style={{ color: "#023CA6" }}>Financial Processes</span>
+              Simplify{" "}
+              <span style={{ color: "#023CA6" }}>Financial Processes</span>
             </h3>
           </div>
           <div className="flex-col benifit">
@@ -227,7 +229,8 @@ function App() {
           </div>
           <div className="flex-col benifit">
             <h3>
-              Simplify <span style={{ color: "#023CA6" }}>Financial Processes</span>
+              Simplify{" "}
+              <span style={{ color: "#023CA6" }}>Financial Processes</span>
             </h3>
           </div>
           <div className="flex-col benifit">
@@ -236,6 +239,140 @@ function App() {
             </h3>
           </div>
         </section>
+
+        {/* FAQ */}
+        <section className="faq-section">
+          <h1>FAQ</h1>
+          {/* image */}
+          <div className="flex-col">
+            <div className="flex faq">
+              <h3>
+                What features does LifeLinkr software include for clinics?
+              </h3>
+              {/* svg */}
+            </div>
+            <p>
+              LifeLinkr includes patient management, appointment scheduling,
+              billing, EHR, and customizable dashboards to streamline clinic
+              operations.
+            </p>
+          </div>
+          <div className="flex faq">
+            <h3>Is LifeLinkr software suitable for individual doctors?</h3>
+            {/* svg */}
+          </div>
+          <div className="flex faq">
+            <h3>Is LifeLinkr software suitable for individual doctors?</h3>
+            {/* svg */}
+          </div>
+          <div className="flex faq">
+            <h3>Is LifeLinkr software suitable for individual doctors?</h3>
+            {/* svg */}
+          </div>
+          <div className="flex faq">
+            <h3>Is LifeLinkr software suitable for individual doctors?</h3>
+            {/* svg */}
+          </div>
+          <a href="/">Load More</a>
+        </section>
+
+        {/* Form Section */}
+        <section className="form-section">
+          <h1>Schedule a Free Demo</h1>
+          <h2>
+            Experience Seamless{" "}
+            <span style={{ color: "#F7C02A" }}>Healthcare Management</span> with
+            LifeLinkr
+          </h2>
+
+          <form action="" className="big-form">
+            <input
+              type="text"
+              name="fullname"
+              id="big-fullname"
+              placeholder="Full Name*"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="big-email"
+              placeholder="Email Address*"
+              required
+            />
+            <input
+              type="tel"
+              name="mobile"
+              id="big-mobile"
+              placeholder="Phone Number*"
+              required
+            />
+            <input
+              type="tel"
+              name="whatsapp"
+              id="big-whatsapp"
+              placeholder="WhatsApp Number"
+            />
+            <input
+              type="text"
+              name="clinic-name"
+              id="big-clinic-name"
+              placeholder="Clinic Name*"
+              required
+            />
+            <input
+              type="text"
+              name="country"
+              id="big-country"
+              placeholder="Country*"
+              required
+            />
+            <input
+              type="text"
+              name="city"
+              id="big-city"
+              placeholder="City*"
+              required
+            />
+            <input
+              type="number"
+              name="users"
+              id="big-users"
+              placeholder="No. of User"
+            />
+            <input
+              type="text"
+              name="software"
+              id="big-software-usage"
+              placeholder="Currently Using Any Software?*"
+              required
+            />
+            <textarea name="message" id="big-message"></textarea>
+            <div className="flex">
+              <div className="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" required />
+                <span className="checkmark"></span>
+              </div>
+              <h1>
+                I agree and accept the{" "}
+                <span style={{ color: "#F7C02A", cursor: "pointer" }}>
+                  Terms & Conditions
+                </span>
+              </h1>
+            </div>
+
+            <button type="submit" className="form-button">
+              Schedule Demo <span style={{ color: "#F7C02A" }}>➡</span>
+            </button>
+          </form>
+        </section>
+
+        {/* Hassle Free Section */}
+        <section className="hassle-section"></section>
+
+        
+        {/* Stay Focused Section */}
+        <section className="focused-section"></section>
       </div>
     </div>
   );

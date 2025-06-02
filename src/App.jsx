@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 import "./assets/fonts/Nunito/Nunito.ttf";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -368,12 +369,71 @@ function App() {
         </section>
 
         {/* Hassle Free Section */}
-        <section className="hassle-section"></section>
+        <section className="hassle-section flex-col">
+          <h1>Managing ART Made Hassle Free</h1>
+          <div className="flex">
+            {/* Image */}
+            <div className="flex-col list-section">
+              <ul className="list">
+                <li>
+                  Comprehensive and secure platform for managing IVF and
+                  reproductive health information.
+                </li>
+                <li>
+                  Centralizes patient data, lab records, treatment cyces, and
+                  financial information.
+                </li>
+                <li>
+                  Designed specifically for fertility clinics, making critical
+                  information easily accessible.
+                  <br />
+                  <span style={{ color: "#023CA6", cursor: "pointer" }}>
+                    Read More
+                  </span>
+                </li>
+              </ul>
+              <button type="button" className="schedule-demo-button">
+                Schedule Demo <span style={{ color: "#F7C02A" }}>➡</span>
+              </button>
+            </div>
+          </div>
+        </section>
 
-        
         {/* Stay Focused Section */}
-        <section className="focused-section"></section>
+        <section className="focused-section flex-col">
+          <h1>Stay Focused, No More Software Hopping</h1>
+          <div className="flex">
+            <div className="flex-col list-section">
+              <ul className="list">
+                <li>
+                  Eliminates the need for multiple standalone systems by
+                  integrating essential functions into one platform.
+                </li>
+                <li>
+                  Includes HR, payroll, accounting, bank reconciliation, and
+                  inventory management tools.
+                </li>
+                <li>
+                  Provides comprehensive solutions for billig, patient
+                  managemtn, pharmacy and tracking, and bookkeeping.
+                  <br />
+                  <span style={{ color: "#023CA6", cursor: "pointer" }}>
+                    Read More
+                  </span>
+                </li>
+              </ul>
+              <button type="button" className="schedule-demo-button">
+                Schedule Demo <span style={{ color: "#F7C02A" }}>➡</span>
+              </button>
+            </div>
+
+            {/* Image */}
+          </div>
+        </section>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

@@ -1,22 +1,23 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <nav className="navbar">
       {/* Logo */}
-      <div className='logo'>LIFE<span>LINK</span>R</div>
+      <div className="logo">
+        LIFE<span>LINK</span>R
+      </div>
 
       {/* Pages */}
-    <div className='navbar-items'>
-      <a href="/">Home</a>
-      <a href="/">Why Choose Us</a>
-      <a href="/">Benifits</a>
-      <a href="/">FAQs</a>
-      <button className='white-button'>WhatsApp Us</button>
-    </div>
+      <div className="navbar-items">
+        <a href="/">Home</a>
+        <a href="/">Why Choose Us</a>
+        <a href="/">Benifits</a>
+        <a href="/">FAQs</a>
+        <button className="white-button">WhatsApp Us</button>
+      </div>
+    </nav>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbar;

@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+
+/* Navbar Starts Here*/
+
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -83,6 +87,10 @@
   box-shadow: #53535359 5px 5px 5px;
 }
 
+/* Navbar Ends Here*/
+
+
+
 .flex {
   display: flex;
 }
@@ -91,6 +99,9 @@
   display: flex;
   flex-direction: column;
 }
+
+
+/* Home Page */
 
 .main {
   min-height: 80vh;
@@ -138,7 +149,7 @@
   text-align: start;
   width: 50%;
   background-color: #16325B;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .main-right-section>h1 {
@@ -162,7 +173,7 @@
   font-family: inherit;
   font-size: 1.4rem;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 22px;
   background-color: transparent;
   border: white solid;
   color: white;
@@ -297,6 +308,7 @@ input[checkbox]:checked~.checkmark {
   background-color: white;
   font-family: inherit;
   padding: 10px 20px;
+  border-radius: 15px;
   box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
@@ -314,8 +326,14 @@ input[checkbox]:checked~.checkmark {
   font-size: 1.3rem;
 }
 
-.why-section,.benifits-section,.faq-section,.form-section,.hassle-section,.focused-section {
+.why-section,
+.benifits-section,
+.faq-section,
+.form-section,
+.hassle-section,
+.focused-section {
   background-color: white;
+  border-radius: 15px;
 }
 
 .benifits-section {
@@ -325,3 +343,102 @@ input[checkbox]:checked~.checkmark {
 
 
 
+
+
+
+/* Home Page Ends Here */
+
+/* Footer Starts Here */
+
+.footer {
+  background-color: #EAEAEA;
+  padding: 30px;
+  gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.footer-left>.logo {
+  padding: 0px;
+  margin: 0;
+  font-size: 5rem;
+}
+
+.footer-left {
+  width: 60%;
+}
+
+.footer-left>p {
+  color: var(--gray);
+  font-size: 1.3rem;
+  margin-top: -15px
+}
+
+
+.footer-links {
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-links>a {
+  font-size: 1.1rem;
+  color: var(--skyblue);
+  padding: 0 10px;
+  border-right: var(--skyblue) solid 2px;
+}
+
+.footer-right{
+  width: 40%;
+}
+
+.footer-form {
+  gap: 20px;
+}
+
+.footer-form>h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+  text-align: start;
+}
+
+#footer-mobile {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: gray;
+  border: gray solid;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+#footer-mobile::placeholder {
+  color: gray;
+}
+
+.book-button {
+  padding: 20px;
+  border: transparent;
+  border-radius: 10px;
+  /* background: #009adc; */
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #009adc 0%, #0041c3 80%);
+  background: -webkit-linear-gradient(0deg, #009adc 0%, #0041c3 80%);
+  background: -moz-linear-gradient(90deg, #009adc 0%, #0041c3 80%);
+  transition: all 0.5s ease-in-out;
+}
+
+.book-button:hover {
+  background: linear-gradient(90deg, #0041c3 0%, #009adc 100%);
+    background: -webkit-linear-gradient(0deg, #0041c3 0%, #009adc 100%);
+  background: -moz-linear-gradient(90deg, #0041c3 0%, #009adc 100%);
+
+}
+
+/* Footer Ends Here */

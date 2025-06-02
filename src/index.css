@@ -1,3 +1,5 @@
+/* @import "bootstrap/scss/bootstrap"; */
+
 @font-face{
   font-family: "Quicksand";
   src:local("Quicksand"),
@@ -27,5 +29,4 @@
 
 body {
   margin: 0;
-  /* width: 100vw; */
 }

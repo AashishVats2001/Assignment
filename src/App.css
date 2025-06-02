@@ -90,7 +90,6 @@
 /* Navbar Ends Here*/
 
 
-
 .flex {
   display: flex;
 }
@@ -99,6 +98,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.why-section,
+.benifits-section,
+.faq-section,
+.hassle-section,
+.focused-section {
+  background-color: white;
+  border-radius: 15px;
+}
+
 
 
 /* Home Page */
@@ -124,9 +133,9 @@
   text-align: start;
 }
 
-.main-left-section>h1 {
+.heading {
   color: var(--blue);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -142,6 +151,11 @@
   font-size: 1.9rem;
   color: var(--gray);
   font-weight: 500;
+}
+
+.main-section-info>.flex {
+  align-items: center;
+  gap: 10px;
 }
 
 .main-right-section {
@@ -180,6 +194,11 @@
 }
 
 input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+textarea::placeholder {
   color: white;
   opacity: 0.8;
 }
@@ -294,6 +313,8 @@ input[checkbox]:checked~.checkmark {
 
 }
 
+/* Cards Section Starts Here */
+
 .card-section {
   background-color: #F3F3F3;
   display: grid;
@@ -307,8 +328,9 @@ input[checkbox]:checked~.checkmark {
   align-items: center;
   background-color: white;
   font-family: inherit;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 15px;
+  gap: 10px;
   box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 78px 73px 175px -89px rgba(0, 0, 0, 0.07);
@@ -318,33 +340,233 @@ input[checkbox]:checked~.checkmark {
   color: #023CA6;
   font-weight: 600;
   font-size: 2rem;
+  margin: 0;
 }
 
 .card>p {
   color: #7e7d7d;
   font-weight: 500;
   font-size: 1.3rem;
+  margin: 0;
 }
 
-.why-section,
-.benifits-section,
-.faq-section,
-.form-section,
-.hassle-section,
-.focused-section {
-  background-color: white;
-  border-radius: 15px;
+/* Cards Section Ends Here */
+
+/* Why Choose Us Starts Here */
+
+.why-section {
+  gap: 20px;
+  align-items: center;
+  text-align: start;
 }
 
-.benifits-section {
+.why-cards {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  box-shadow: 10px 10px 29px -18px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 29px -18px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 29px -18px rgba(0, 0, 0, 0.2);
+}
+
+.why-cards>.card {
+  align-items: start;
+  text-align: left;
+}
+
+/* Why Choose Us Ends Here */
+
+/* Benifits Section Starts Here */
+
+
+.benifits {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.benifit>h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.benifit>h3>span {
+  font-weight: 700;
 }
 
 
+/* Benifits Section Ends Here */
+
+/* FAQ Starts Here */
+
+.faq-section>img {
+  width: 100%;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  /* border: 1px solid var(--gray); */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  color: var(--gray);
+  font-weight: 500;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.faq-arrow {
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  color: black;
+  border-radius: 20px;
+  opacity: 0.2;
+  padding: 3px;
+  transition: rotate 0.3s ease;
+}
+
+.faq-answer {
+  width: 90%;
+  font-size: 1.4rem;
+  color: gray;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  text-align: start;
+  display: none;
+}
+
+/* Toggle show/hide on checked */
+.faq-toggle:checked+.faq-question+.faq-answer {
+  display: block;
+}
+
+/* Rotate arrow when open */
+.faq-toggle:checked+.faq-question .faq-arrow {
+  rotate: 180deg;
+}
+
+/* FAQ Ends Here */
+
+/* Form Section Starts Here */
+
+.form-section {
+  border-radius: 15px;
+  background-color: #16325B;
+}
+
+.form-section-child {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-section-child>.heading {
+  color: white;
+  margin: 0;
+}
+
+.form-section-child>h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.big-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.big-form>input,
+textarea {
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border-radius: 22px;
+  background-color: transparent;
+  border: white solid;
+  color: white;
+}
 
 
+#big-software-usage {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
+#big-message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.big-form>div {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+}
+
+.form-button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Form Section Ends Here */
+
+/* Hassle and Focused Section Starts Here */
+.hassle-section,.focused-section {
+  align-items: center;
+}
+
+.hassle-section>.flex,.focused-section>.flex {
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.list-section {
+  /* flex-wrap: wrap; */
+  width: 40%;
+}
+
+.list {
+  font-size: 1.5rem;
+  text-align: start;
+  color: gray;
+  padding: 0;
+}
+
+.schedule-demo-button {
+  width: 80%;
+  border: transparent;
+  border-radius: 60px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(90deg, #009adc 0%, #0041c3 80%);
+  background: -webkit-linear-gradient(0deg, #009adc 0%, #0041c3 80%);
+  background: -moz-linear-gradient(90deg, #009adc 0%, #0041c3 80%);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Hassle and Focused Section Ends Here */
 
 /* Home Page Ends Here */
 
@@ -390,7 +612,7 @@ input[checkbox]:checked~.checkmark {
   border-right: var(--skyblue) solid 2px;
 }
 
-.footer-right{
+.footer-right {
   width: 40%;
 }
 
@@ -436,7 +658,7 @@ input[checkbox]:checked~.checkmark {
 
 .book-button:hover {
   background: linear-gradient(90deg, #0041c3 0%, #009adc 100%);
-    background: -webkit-linear-gradient(0deg, #0041c3 0%, #009adc 100%);
+  background: -webkit-linear-gradient(0deg, #0041c3 0%, #009adc 100%);
   background: -moz-linear-gradient(90deg, #0041c3 0%, #009adc 100%);
 
 }

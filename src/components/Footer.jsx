@@ -1,4 +1,4 @@
-import React from "react";
+import Logo from "../assets/images/logo.jpg";
 
 const Footer = () => {
   return (
@@ -6,6 +6,11 @@ const Footer = () => {
       <div className="footer-left flex-col">
         {/* Logo */}
         <div className="logo">
+          <img
+            src={Logo}
+            alt="Logo"
+            style={{ width: "150px", marginBottom: "-10px" }}
+          />
           LIFE<span>LINK</span>R
         </div>
         <p>All Rights Reserved 2023-2024 © Copyright - LifeLinkr |</p>
@@ -27,7 +32,7 @@ const Footer = () => {
 
       <div className="footer-right">
         <form action="/" className="footer-form flex-col">
-        <h1>SCHEDULE YOUR DEMO</h1>
+          <h1>SCHEDULE YOUR DEMO</h1>
           <input
             type="tel"
             name="phone"

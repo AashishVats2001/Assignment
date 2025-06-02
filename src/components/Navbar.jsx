@@ -1,10 +1,15 @@
-import React from "react";
+import Logo from "../assets/images/logo.jpg";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
       <div className="logo">
+        <img
+          src={Logo}
+          alt="Logo"
+          style={{ width: "100px", marginBottom: "-8px" }}
+        />
         LIFE<span>LINK</span>R
       </div>
 

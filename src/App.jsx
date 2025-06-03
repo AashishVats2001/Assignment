@@ -589,7 +589,14 @@ function App() {
             <div className="faq-answer">{/* Answer */}</div>
           </div>
 
-          <a href="/" style={{ fontSize: "1.4rem", color: "#7087B4", textAlign: "center" }}>
+          <a
+            href="/"
+            style={{
+              fontSize: "1.4rem",
+              color: "#7087B4",
+              textAlign: "center",
+            }}
+          >
             Load More
           </a>
         </section>
@@ -605,60 +612,62 @@ function App() {
             </h2>
 
             <form action="/" className="big-form">
-              <input
-                type="text"
-                name="fullname"
-                id="big-fullname"
-                placeholder="Full Name*"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                id="big-email"
-                placeholder="Email Address*"
-                required
-              />
-              <input
-                type="tel"
-                name="mobile"
-                id="big-mobile"
-                placeholder="Phone Number*"
-                required
-              />
-              <input
-                type="tel"
-                name="whatsapp"
-                id="big-whatsapp"
-                placeholder="WhatsApp Number"
-              />
-              <input
-                type="text"
-                name="clinic-name"
-                id="big-clinic-name"
-                placeholder="Clinic Name*"
-                required
-              />
-              <input
-                type="text"
-                name="country"
-                id="big-country"
-                placeholder="Country*"
-                required
-              />
-              <input
-                type="text"
-                name="city"
-                id="big-city"
-                placeholder="City*"
-                required
-              />
-              <input
-                type="number"
-                name="users"
-                id="big-users"
-                placeholder="No. of User"
-              />
+              <div className="big-form-inputs">
+                <input
+                  type="text"
+                  name="fullname"
+                  id="big-fullname"
+                  placeholder="Full Name*"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="big-email"
+                  placeholder="Email Address*"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="mobile"
+                  id="big-mobile"
+                  placeholder="Phone Number*"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="whatsapp"
+                  id="big-whatsapp"
+                  placeholder="WhatsApp Number"
+                />
+                <input
+                  type="text"
+                  name="clinic-name"
+                  id="big-clinic-name"
+                  placeholder="Clinic Name*"
+                  required
+                />
+                <input
+                  type="text"
+                  name="country"
+                  id="big-country"
+                  placeholder="Country*"
+                  required
+                />
+                <input
+                  type="text"
+                  name="city"
+                  id="big-city"
+                  placeholder="City*"
+                  required
+                />
+                <input
+                  type="number"
+                  name="users"
+                  id="big-users"
+                  placeholder="No. of User"
+                />
+              </div>
               <input
                 type="text"
                 name="software"
@@ -756,7 +765,7 @@ function App() {
               </button>
             </div>
 
-            <img src={focus} alt="hassle-free" />
+            <img src={focus} alt="Stay Focused" />
           </div>
         </section>
       </div>

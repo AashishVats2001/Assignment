@@ -6,14 +6,12 @@ const Footer = () => {
       <div className="footer-left flex-col">
         {/* Logo */}
         <div className="logo">
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{ width: "150px", marginBottom: "-10px" }}
-          />
-          LIFE<span>LINK</span>R
+          <img src={Logo} alt="Logo" />
+          <h1>
+            LIFE<span>LINK</span>R
+          </h1>
         </div>
-        <p>All Rights Reserved 2023-2024 © Copyright - LifeLinkr |</p>
+        <p>All Rights Reserved 2023-2024 © Copyright - LifeLinkr </p>
         <div className="flex footer-links">
           <a href="/">Privacy Policy</a>
           <a href="/">Ads Policy</a>

@@ -1,9 +1,9 @@
 {
-  "name": "assignment",
+  "name": "sample-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/AashishVats2001/Assignment/",
+  "homepage": "https://github.com/AashishVats2001/Sample-Website/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
